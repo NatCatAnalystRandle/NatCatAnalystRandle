@@ -25,6 +25,8 @@ The completed Phase 1 baseline uses the USGS 2018 National Seismic Hazard Model 
 
 [View the project repository](https://github.com/NatCatAnalystRandle/seismic-correlation-insurance-loss)
 
+[Read the concise project case study](https://github.com/NatCatAnalystRandle/seismic-correlation-insurance-loss/blob/main/docs/PROJECT_CASE_STUDY.md)
+
 ## Research and technical interests
 
 - Earthquake and tsunami risk
