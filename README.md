@@ -23,7 +23,7 @@ USGS seismic hazard → stochastic event catalogs → ground-motion fields → b
 
 The completed Phase 1 baseline uses the USGS 2018 National Seismic Hazard Model and a 2,000,000-year stochastic catalog to model earthquake losses for a 470-building portfolio in Seaside, Oregon.
 
-[View the project repository](https://github.com/EmmanuelRandle/seismic-correlation-insurance-loss)
+[View the project repository](https://github.com/NatCatAnalystRandle/seismic-correlation-insurance-loss)
 
 ## Research and technical interests
 
