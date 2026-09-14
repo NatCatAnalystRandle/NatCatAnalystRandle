@@ -1,64 +1,90 @@
 # Hi, I’m Emmanuel Randle
 
-I am a PhD student in Structural Engineering within the School of Civil and Construction Engineering at Oregon State University.
+I am a PhD researcher in Structural Engineering at Oregon State University. I develop computational models that connect earthquake and tsunami hazards with building damage, financial loss, insurance, reinsurance, and community consequences.
 
-My research focuses on regional earthquake and tsunami risk assessment, probabilistic catastrophe risk modeling, uncertainty, dependence and correlation in hazard and damage processes, and community resilience.
+My research and technical interests include:
 
-I am particularly interested in understanding how:
+- earthquake and tsunami risk;
+- catastrophe modeling;
+- spatial correlation and statistical dependence;
+- building fragility and damage modeling;
+- insurance, reinsurance, and insurance-linked securities;
+- portfolio risk and resilience finance;
+- population displacement and disaster recovery.
 
-- spatial correlation in seismic intensity measures affects regional damage;
-- relationships between earthquake sources and tsunami hazards influence multihazard risk;
-- damage correlation across building portfolios changes regional consequences;
-- physical damage translates into economic loss, insured loss, reinsurance loss, and population displacement.
-
-My broader goal is to develop more realistic catastrophe-risk models that connect engineering analysis with insurance, reinsurance, resilience finance, and disaster-risk decision-making.
-
-## Current portfolio project
+## Featured catastrophe-risk project
 
 ### Seismic Correlation and Insurance Loss
 
-I am developing an end-to-end earthquake catastrophe-risk model that connects:
+I developed a reproducible, 13-notebook earthquake catastrophe-risk workflow that connects:
 
-USGS seismic hazard → stochastic event catalogs → ground-motion fields → building damage → ground-up loss → insurance recovery → reinsurance loss → AAL, AEP, OEP, and PML.
+**USGS seismic sources → stochastic event catalogs → ground-motion fields → building damage → portfolio loss → insurance → reinsurance → parametric risk transfer**
 
-The completed Phase 1 baseline uses the USGS 2018 National Seismic Hazard Model and a 2,000,000-year stochastic catalog to model earthquake losses for a 470-building portfolio in Seaside, Oregon.
+The project uses the USGS 2018 National Seismic Hazard Model and a 2,000,000-year stochastic catalog containing 10,630 earthquake occurrences. It models structural and nonstructural damage across a 470-building portfolio in Seaside, Oregon.
 
-[View the project repository](https://github.com/NatCatAnalystRandle/seismic-correlation-insurance-loss)
+### What the project evaluates
 
-[Read the concise project case study](https://github.com/NatCatAnalystRandle/seismic-correlation-insurance-loss/blob/main/docs/PROJECT_CASE_STUDY.md)
+- Independent and spatially correlated ground-motion fields
+- Aldea et al. and Goda–Atkinson spatial-correlation models
+- Structural and nonstructural damage states
+- Ground-up, gross insured, uninsured, ceded, and retained losses
+- Average annual loss, AEP, OEP, and return-period PML
+- Occurrence excess-of-loss and annual aggregate reinsurance
+- TVaR-based tail capital and required reinsurance limits
+- Parametric catastrophe-bond basis risk
+- Paired bootstrap uncertainty using common event catalogs and random streams
+
+### Selected result
+
+For this demonstration portfolio, applying the same occurrence excess-of-loss program across all dependence cases increased the modeled 2,500-year retained AEP PML from **$19.36 million** in the independent case to **$33.27 million** and **$34.08 million** under the two spatial-correlation models.
+
+The reinsurance limit required to restore the independent case’s retained 2,500-year PML increased from approximately **$61.84 million** to **$75.90 million** and **$76.67 million**. These are model-conditioned research results rather than insurance placement recommendations.
+
+### Validation and reproducibility
+
+- 13 completed notebooks
+- 92 automated tests passed
+- 65 upstream artifact checks passed
+- 14 final synthesis checks passed
+- Zero critical validation failures
+- Deterministic random streams, restartable processing, SHA-256 artifact verification, and explicit accounting reconciliation
+
+[Explore the validated v2.0.0 project](https://github.com/NatCatAnalystRandle/seismic-correlation-insurance-loss/tree/v2.0.0)
+
+[Read the Phase 2 results report](https://github.com/NatCatAnalystRandle/seismic-correlation-insurance-loss/blob/v2.0.0/data/metadata/phase_2/notebook_13_phase_2_results/notebook_13_results_report.md)
+
+[View the v2.0.0 release](https://github.com/NatCatAnalystRandle/seismic-correlation-insurance-loss/releases/tag/v2.0.0)
 
 ## Research and technical interests
 
-- Earthquake and tsunami risk
-- Catastrophe modeling
-- Probabilistic risk analysis
-- Spatial correlation and dependence
-- Building fragility and damage modeling
-- Portfolio loss simulation
+- Earthquake and tsunami risk assessment
+- Probabilistic catastrophe-risk modeling
+- Spatial correlation and uncertainty propagation
+- HAZUS-based building damage modeling
+- Stochastic event catalogs and Monte Carlo simulation
 - Insurance and reinsurance analytics
-- AAL, AEP, OEP, and PML
-- Community resilience
-- Population displacement and disaster consequences
+- Parametric insurance and catastrophe bonds
+- Community resilience and population displacement
 
 ## Tools and methods
 
-- Python
-- Jupyter
+- Python and Jupyter
 - Git and GitHub
-- HAZUS-based damage modeling
-- USGS NSHM
-- Stochastic event catalogs
+- USGS National Seismic Hazard Models
+- HAZUS-based fragility and damage models
 - Monte Carlo simulation
-- Geospatial analysis
 - Statistical dependence modeling
+- Geospatial analysis
+- AAL, AEP, OEP, PML, VaR, and TVaR
 - Insurance and reinsurance loss calculations
+- Reproducible scientific computing
 
-## Current affiliations
+## Current affiliation
 
-- PhD Student, Oregon State University
-
+**PhD Researcher, Oregon State University**
 
 ## Connect with me
 
-- LinkedIn: https://www.linkedin.com/in/emmanuel-randle/
-- Email: randlee@oregonstate.edu
+- [LinkedIn](https://www.linkedin.com/in/emmanuel-randle/)
+- [Email](mailto:randlee@oregonstate.edu)
+- [Personal website](https://natcatanalystrandle.github.io/)
